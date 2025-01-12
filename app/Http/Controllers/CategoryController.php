@@ -15,9 +15,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $date = Category::all();
+        $data = Category::all();
         return view("CategoryFiles.allCategories", [
-            "data" => $date
+            "data" => $data
         ]);
     }
 
